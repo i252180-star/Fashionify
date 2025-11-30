@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Categories | Fashionify</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="header-left">
+      <img src="images/logo.png" alt="Logo" style="height: 40px;" />
+      <h4>Fashionify</h4>
+    </div>
+    <div class="header-center">
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="categories.html" class="active">Categories</a>
+        <a href="topsellers.html">Top Sellers</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a href="login.html"><button class="login-btn">Login</button></a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <h2 class="text-center mb-4">Browse Categories</h2>
+
+    <!-- Category Buttons -->
+    <div class="text-center mb-4">
+      <button class="btn btn-theme mx-1" onclick="showSection('shirts')">Shirts</button>
+      <button class="btn btn-theme mx-1" onclick="showSection('shoes')">Shoes</button>
+      <button class="btn btn-theme mx-1" onclick="showSection('bags')">Bags</button>
+      <button class="btn btn-theme mx-1" onclick="showSection('caps')">Caps</button>
+      <button class="btn btn-theme mx-1" onclick="showSection('shorts')">Shorts</button>
+    </div>
+
+    <!-- ========== SHIRTS SECTION ========== -->
+    <div id="shirts" class="section-products mt-4">
+      <div class="row row-cols-2 row-cols-md-4 g-4">
+
+        <div class="col product-card">
+          <img src="images/alloverprintedshirt.webp" class="product-img">
+          <p>All-Over Printed Shirt</p>
+          <p><strong>₨4,200</strong></p>
+          <p>A vibrant shirt with a full-body print, ideal for casual outings.</p>
+          <button class="btn-cart" onclick="addToCart('All-Over Printed Shirt')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/basicbuttonupshirt.webp" class="product-img">
+          <p>Button-up Black Shirt</p>
+          <p><strong>₨4,800</strong></p>
+          <p>Classic black shirt, perfect for both formal and semi-formal wear.</p>
+          <button class="btn-cart" onclick="addToCart('Button-up Black Shirt')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/beigetexturedshirt.jpg" class="product-img">
+          <p>Beige Textured Shirt</p>
+          <p><strong>₨3,500</strong></p>
+          <p>Soft-textured shirt for a comfortable and sophisticated look.</p>
+          <button class="btn-cart" onclick="addToCart('Beige Textured Shirt')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/checkeredshirt.webp" class="product-img">
+          <p>Red Checkered Shirt</p>
+          <p><strong>₨4,000</strong></p>
+          <p>Trendy red checkered shirt, great for everyday style.</p>
+          <button class="btn-cart" onclick="addToCart('Red Checkered Shirt')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/resortcollarshirt.webp" class="product-img">
+          <p>Resort Collar Shirt</p>
+          <p><strong>₨5,200</strong></p>
+          <p>Relaxed-fit shirt ideal for vacations and weekends.</p>
+          <button class="btn-cart" onclick="addToCart('Resort Collar Shirt')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/seersuckershirt.webp" class="product-img">
+          <p>Seer Sucker Shirt</p>
+          <p><strong>₨4,900</strong></p>
+          <p>Lightweight and breathable fabric for warm weather.</p>
+          <button class="btn-cart" onclick="addToCart('Seer Sucker Shirt')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/basicwhiteshirt.webp" class="product-img">
+          <p>Basic White Shirt</p>
+          <p><strong>₨3,400</strong></p>
+          <p>Essential white shirt for any wardrobe.</p>
+          <button class="btn-cart" onclick="addToCart('Basic White Shirt')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/basicbrownshirt.webp" class="product-img">
+          <p>Basic Brown Shirt</p>
+          <p><strong>₨3,700</strong></p>
+          <p>A casual brown shirt, perfect for earthy tones lovers.</p>
+          <button class="btn-cart" onclick="addToCart('Basic Brown Shirt')">Add to Cart</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ========== SHOES SECTION ========== -->
+    <div id="shoes" class="section-products mt-4" style="display: none;">
+      <div class="row row-cols-2 row-cols-md-4 g-4">
+
+        <div class="col product-card">
+          <img src="images/shoes.avif" class="product-img">
+          <p>Blue H</p>
+          <p><strong>₨6,000</strong></p>
+          <p>Modern blue high-tops for everyday use.</p>
+          <button class="btn-cart" onclick="addToCart('Blue H')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/airjordanblackmid.avif" class="product-img">
+          <p>Black M</p>
+          <p><strong>₨5,800</strong></p>
+          <p>Mid-cut black shoes blending style and comfort.</p>
+          <button class="btn-cart" onclick="addToCart('Black M')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/airjordan1mid.avif" class="product-img">
+          <p>White H</p>
+          <p><strong>₨7,000</strong></p>
+          <p>Crisp white high-tops for a clean look.</p>
+          <button class="btn-cart" onclick="addToCart('White H')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/airjordan1midse.avif" class="product-img">
+          <p>White Pink H</p>
+          <p><strong>₨6,500</strong></p>
+          <p>High-tops with a pink accent for a trendy vibe.</p>
+          <button class="btn-cart" onclick="addToCart('White Pink H')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/airjordanblack.avif" class="product-img">
+          <p>Black M</p>
+          <p><strong>₨5,500</strong></p>
+          <p>Mid-cut black shoes blending style and comfort.</p>
+          <button class="btn-cart" onclick="addToCart('Black M')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/airjordanblue.avif" class="product-img">
+          <p>Blue L</p>
+          <p><strong>₨6,200</strong></p>
+          <p>Large-size blue sneakers with extra cushioning.</p>
+          <button class="btn-cart" onclick="addToCart('Blue L')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/airjordangreen.avif" class="product-img">
+          <p>Green H</p>
+          <p><strong>₨6,100</strong></p>
+          <p>High-top green sneakers for a bold statement.</p>
+          <button class="btn-cart" onclick="addToCart('Green H')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/airjordanorange.avif" class="product-img">
+          <p>Orange L</p>
+          <p><strong>₨5,900</strong></p>
+          <p>Bright orange large-size sneakers for standout looks.</p>
+          <button class="btn-cart" onclick="addToCart('Orange L')">Add to Cart</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ========== BAGS SECTION ========== -->
+    <div id="bags" class="section-products mt-4" style="display:none;">
+      <div class="row row-cols-2 row-cols-md-4 g-4">
+
+        <div class="col product-card">
+          <img src="images/blackbag.webp" class="product-img">
+          <p>Black Bag</p>
+          <p><strong>₨3,000</strong></p>
+          <p>Simple black shoulder bag for everyday use.</p>
+          <button class="btn-cart" onclick="addToCart('Black Bag')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/bluebag.webp" class="product-img">
+          <p>Blue Bag</p>
+          <p><strong>₨3,200</strong></p>
+          <p>Stylish blue handbag for modern outings.</p>
+          <button class="btn-cart" onclick="addToCart('Blue Bag')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/leather brown bag.webp" class="product-img">
+          <p>Leather Brown Bag</p>
+          <p><strong>₨3,500</strong></p>
+          <p>Elegant leather bag in rich brown tones.</p>
+          <button class="btn-cart" onclick="addToCart('Leather Brown Bag')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/biegebag.webp" class="product-img">
+          <p>Biege Bag</p>
+          <p><strong>₨2,800</strong></p>
+          <p>Classic biege shoulder bag with soft finish.</p>
+          <button class="btn-cart" onclick="addToCart('Biege Bag')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/pinkbag.webp" class="product-img">
+          <p>Pink Bag</p>
+          <p><strong>₨3,100</strong></p>
+          <p>Fun and fresh pink handbag for vibrant style.</p>
+          <button class="btn-cart" onclick="addToCart('Pink Bag')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/greenbag.webp" class="product-img">
+          <p>Green Bag</p>
+          <p><strong>₨3,000</strong></p>
+          <p>Earthy green handbag, perfect for casual wear.</p>
+          <button class="btn-cart" onclick="addToCart('Green Bag')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/blackwithbrown.webp" class="product-img">
+          <p>Black & Brown Bag</p>
+          <p><strong>₨3,300</strong></p>
+          <p>Two-tone bag with black and brown accents.</p>
+          <button class="btn-cart" onclick="addToCart('Black & Brown Bag')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/brownbiegebag.webp" class="product-img">
+          <p>Brown & Biege Bag</p>
+          <p><strong>₨3,450</strong></p>
+          <p>Stylish combination of brown and biege tones.</p>
+          <button class="btn-cart" onclick="addToCart('Brown & Biege Bag')">Add to Cart</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ========== CAPS SECTION ========== -->
+    <div id="caps" class="section-products mt-4" style="display:none;">
+      <div class="row row-cols-2 row-cols-md-4 g-4">
+
+        <div class="col product-card">
+          <img src="images/basicblack.jpg" class="product-img">
+          <p>Basic Black</p>
+          <p><strong>₨1,500</strong></p>
+          <p>Minimalist black cap for everyday fashion.</p>
+          <button class="btn-cart" onclick="addToCart('Basic Black Cap')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/basicblue.webp" class="product-img">
+          <p>Basic Blue</p>
+          <p><strong>₨1,600</strong></p>
+          <p>Classic blue cap for sports or casual wear.</p>
+          <button class="btn-cart" onclick="addToCart('Basic Blue Cap')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/basicwhite.webp" class="product-img">
+          <p>Basic White</p>
+          <p><strong>₨1,400</strong></p>
+          <p>Clean white cap for a fresh appearance.</p>
+          <button class="btn-cart" onclick="addToCart('Basic White Cap')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/basicredH.webp" class="product-img">
+          <p>Basic Red H</p>
+          <p><strong>₨1,550</strong></p>
+          <p>Bold red cap with high crown design.</p>
+          <button class="btn-cart" onclick="addToCart('Basic Red H Cap')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/basicgrey.jpg" class="product-img">
+          <p>Basic Grey</p>
+          <p><strong>₨1,450</strong></p>
+          <p>Neutral grey cap that suits any outfit.</p>
+          <button class="btn-cart" onclick="addToCart('Basic Grey Cap')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/khakiweekendcap.webp" class="product-img">
+          <p>Khaki Weekend Cap</p>
+          <p><strong>₨1,700</strong></p>
+          <p>Relaxed khaki cap ideal for weekend getaways.</p>
+          <button class="btn-cart" onclick="addToCart('Khaki Weekend Cap')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/leatherbrown.webp" class="product-img">
+          <p>Leather Brown</p>
+          <p><strong>₨1,800</strong></p>
+          <p>Premium leather cap for a luxurious feel.</p>
+          <button class="btn-cart" onclick="addToCart('Leather Brown Cap')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/designedblack.webp" class="product-img">
+          <p>Black with Design</p>
+          <p><strong>₨1,900</strong></p>
+          <p>Cap with unique black design details.</p>
+          <button class="btn-cart" onclick="addToCart('Black with Design Cap')">Add to Cart</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ========== SHORTS SECTION ========== -->
+    <div id="shorts" class="section-products mt-4" style="display:none;">
+      <div class="row row-cols-2 row-cols-md-4 g-4">
+
+        <div class="col product-card">
+          <img src="images/blackshorts.webp" class="product-img">
+          <p>Basic Black</p>
+          <p><strong>₨2,200</strong></p>
+          <p>Minimalist black shorts for sportswear.</p>
+          <button class="btn-cart" onclick="addToCart('Black Shorts')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/blueshorts.webp" class="product-img">
+          <p>Basic Blue</p>
+          <p><strong>₨2,200</strong></p>
+          <p>Minimalist blue shorts for sportswear.</p>
+          <button class="btn-cart" onclick="addToCart('Blue Shorts')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/greenshorts.webp" class="product-img">
+          <p>Basic Green</p>
+          <p><strong>₨2,200</strong></p>
+          <p>Minimalist green shorts for sportswear.</p>
+          <button class="btn-cart" onclick="addToCart('Green Shorts')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/maroonshorts.webp" class="product-img">
+          <p>Basic Maroon</p>
+          <p><strong>₨2,500</strong></p>
+          <p>Minimalist maroon shorts for sportswear.</p>
+          <button class="btn-cart" onclick="addToCart('Maroon Shorts')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/olivegreyshorts.webp" class="product-img">
+          <p>Olive Grey</p>
+          <p><strong>₨2,700</strong></p>
+          <p>Minimalist olive green shorts for sportswear.</p>
+          <button class="btn-cart" onclick="addToCart('Olive Grey Shorts')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/lightbrownshorts.webp" class="product-img">
+          <p>Light Brown</p>
+          <p><strong>₨2,600</strong></p>
+          <p>Minimalist light brown shorts for sportswear.</p>
+          <button class="btn-cart" onclick="addToCart('Light Brown Shorts')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/whiteshorts.webp" class="product-img">
+          <p>Basic White</p>
+          <p><strong>₨2,400</strong></p>
+          <p>Minimalist white shorts for sportswear.</p>
+          <button class="btn-cart" onclick="addToCart('White Shorts')">Add to Cart</button>
+        </div>
+
+        <div class="col product-card">
+          <img src="images/greyshorts.webp" class="product-img">
+          <p>Basic Grey</p>
+          <p><strong>₨2,300</strong></p>
+          <p>Minimalist grey shorts for sportswear.</p>
+          <button class="btn-cart" onclick="addToCart('Grey Shorts')">Add to Cart</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+    <a href="cart.html"><button class="btn-cart">Go to Cart</button></a>
+  </div>
+
+  </main>
+
+  <footer class="text-center mt-4">
+    <p>Contact: support@fashionify.com | +92-333-1234567 | Islamabad, PK</p>
+    <p>&copy; 2025 Fashionify Inc.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | Fashionify</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="images/logo.png" alt="Logo" style="height: 50px;">
+    <h4>Fashionify</h4>
+  </div>
+  <div class="header-center">
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="topsellers.html">Top Sellers</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </div>
+  <div class="header-right">
+    <a href="login.html"><button class="login-btn">Login</button></a>
+  </div>
+</header>
+
+<!-- Search Bar -->
+<div class="search-bar">
+  <input type="text" id="searchInput" class="form-control" placeholder="Search products...">
+  <div id="suggestions"></div>
+</div>
+
+
+<!-- Intro Section -->
+<section class="py-4 text-center">
+  <div class="container">
+    <h2 class="fw-bold">Welcome to Fashionify</h2>
+    <p class="lead hero-text">
+      Where style meets simplicity and quality is always in vogue – What you wear is how you present yourself to the world
+    </p>
+  </div>
+</section>
+
+<!-- Featured Collections -->
+<main class="container">
+  <h2 class="text-center mb-4">Featured Products</h2>
+  <div class="row row-cols-2 row-cols-md-4 g-4">
+
+    <div class="col product-card">
+      <img src="images/alloverprintedshirt.webp" class="product-img" alt="Shirt">
+      <p>All-Over Printed Shirt</p>
+      <p><strong>₨3,200</strong></p>
+      <button class="btn-cart" onclick="addToCart('All-Over Printed Shirt')">Add to Cart</button>
+    </div>
+
+    <div class="col product-card">
+      <img src="images/shoes.avif" class="product-img" alt="Shoes">
+      <p>Blue H</p>
+      <p><strong>₨4,500</strong></p>
+      <button class="btn-cart" onclick="addToCart('Blue H')">Add to Cart</button>
+    </div>
+
+    <div class="col product-card">
+      <img src="images/blackbag.webp" class="product-img" alt="Bag">
+      <p>Black Bag</p>
+      <p><strong>₨3,900</strong></p>
+      <button class="btn-cart" onclick="addToCart('Black Bag')">Add to Cart</button>
+    </div>
+
+    <div class="col product-card">
+      <img src="images/basicblack.jpg" class="product-img" alt="Cap">
+      <p>Basic Black</p>
+      <p><strong>₨3,000</strong></p>
+      <button class="btn-cart" onclick="addToCart('Basic Black Cap')">Add to Cart</button>
+    </div>
+    <div class="col product-card">
+        <img src="images/basicbuttonupshirt.webp" class="product-img" alt="Ladies Shirt">
+        <p>Button-up Black Shirt</p>
+        <p><strong>₨3,600</strong></p>
+        <button class="btn-cart" onclick="addToCart('Button-up Black Shirt')">Add to Cart</button>
+    </div>
+    <div class="col product-card">
+        <img src="images/beigetexturedshirt.jpg" class="product-img" alt="Shirts">
+        <p>Beige Textured Shirt</p>
+        <p><strong>₨3,800</strong></p>
+        <button class="btn-cart" onclick="addToCart('Beige Textured Shirt')">Add to Cart</button>
+    </div>
+    <div class="col product-card">
+        <img src="images/checkeredshirt.webp" class="product-img" alt="Ladies Shirt">
+        <p>Red Checkered Shirt</p>
+        <p><strong>₨3,750</strong></p>
+        <button class="btn-cart" onclick="addToCart('Red Checkered Shirt')">Add to Cart</button>
+    </div>
+    <div class="col product-card">
+        <img src="images/airjordanblackmid.avif" class="product-img" alt="Shoes">
+        <p>Black M</p>
+        <p><strong>₨5,000</strong></p>
+        <button class="btn-cart" onclick="addToCart('Black M')">Add to Cart</button>
+    </div>
+  </div>
+</main>
+
+<footer class="text-center mt-4">
+  <p>Contact: support@fashionify.com | +92-333-1234567 | Islamabad, PK</p>
+  <p>&copy; 2025 Fashionify Inc.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

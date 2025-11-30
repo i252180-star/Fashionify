@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top Sellers | Fashionify</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="images/logo.png" alt="Logo" style="height: 50px;">
+    <h4>Fashionify</h4>
+  </div>
+  <div class="header-center">
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="topsellers.html">Top Sellers</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </div>
+  <div class="header-right">
+    <a href="login.html"><button class="login-btn">Login</button></a>
+  </div>
+</header>
+
+<!-- Search Bar -->
+<div class="search-bar">
+  <input type="text" id="searchInput" class="form-control" placeholder="Search products...">
+  <div id="suggestions"></div>
+</div>
+
+<main class="container py-4">
+  <h2 class="text-center mb-4">Top Selling Products</h2>
+
+  <div class="row row-cols-2 row-cols-md-4 g-4">
+    <div class="col product-card">
+      <img src="images/alloverprintedshirt.webp" class="product-img" alt="Shirt">
+      <p>All-over Printed Shirt</p>
+      <p><strong>₨3,900</strong></p>
+      <p>Trendy and lightweight casual wear for all seasons.</p>
+      <button class="btn-cart" onclick="addToCart('All-over Printed Shirt')">Add to Cart</button>
+    </div>
+
+    <div class="col product-card">
+      <img src="images/shoes.avif" class="product-img" alt="Shoes">
+      <p>Air Jordan Shoes Blue H</p>
+      <p><strong>₨4,200</strong></p>
+      <p>Comfort meets style in this best-selling sneaker.</p>
+      <button class="btn-cart" onclick="addToCart('Air Jordan Shoes Blue H')">Add to Cart</button>
+    </div>
+
+    <div class="col product-card">
+      <img src="images/blackbag.webp" class="product-img" alt="Bag">
+      <p>Classic Black Bag</p>
+      <p><strong>₨4,500</strong></p>
+      <p>Spacious, stylish, and perfect for everyday use.</p>
+      <button class="btn-cart" onclick="addToCart('Classic Black Bag')">Add to Cart</button>
+    </div>
+
+    <div class="col product-card">
+      <img src="images/basicblack.jpg" class="product-img" alt="Cap">
+      <p>Black Cap</p>
+      <p><strong>₨3,700</strong></p>
+      <p>Minimalist cap for urban and athletic style lovers.</p>
+      <button class="btn-cart" onclick="addToCart('Black Cap')">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="text-center mt-4">
+    <a href="cart.html"><button class="btn-cart">Go to Cart</button></a>
+  </div>
+</main>
+
+<footer class="text-center mt-4">
+  <p>Contact: support@fashionify.com | +92-333-1234567 | Islamabad, PK</p>
+  <p>&copy; 2025 Fashionify Inc.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
